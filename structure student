@@ -1,0 +1,25 @@
+#include<stdio.h>
+struct student{
+    char roll_no[10];
+    int marks;
+    struct student* next;
+};
+int main(){
+    struct student s1,s2;
+    printf("Enter the value of roll number: ");
+    scanf("%s",&s1.roll_no);
+    printf("Enter the value of roll number: ");
+    scanf("%s",&s2.roll_no);
+    
+    printf("Enter the marks: ");
+    scanf("%d",&s1.marks);
+    
+    printf("Linked List: \n");
+    printf("%s -> ",s1.roll_no);
+    printf("%d -> ",s1.marks);
+    printf("%s -> ",s2.roll_no);
+    printf("NULL",s2.marks);
+    
+    return 0;
+    
+}
